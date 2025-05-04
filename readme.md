@@ -1,6 +1,6 @@
-# WASM runtime on ARM 32bit architecture
+# WASM runtime on ARM 32-bit architecture
 
-Here are some notes on what it took to get a WASM runtime working on ARM 32bit architecture (`armv6l`), such as Raspberry Pi Zero. A newer model such as Zero 2 is on 64bit, which is more widely supported. The following is an example of steps, adjust as needed.
+Here are some notes on what it took to get a WASM runtime working on ARM 32-bit architecture (`armv6l`), such as Raspberry Pi Zero. A newer model like Zero 2 is on 64 bit, which is more widely supported. The following is an example of steps, adjust as needed.
 
 This article was a great help: [Modern websites in a Raspberry Pi Zero with WebAssembly](https://wasmlabs.dev/articles/modern-websites-pi-zero/).
 
