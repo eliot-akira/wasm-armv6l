@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install git
 ```
 
-If that doesn't work, as in my case, build Git from source. First, install dependencies. Some of these were found through trial and error.
+If that doesn't work, as in my case, build Git (see [Tags](https://github.com/git/git/tags)) from source. First, install dependencies. Some of these were found through trial and error.
 
 ```sh
 mkdir ~/src
@@ -27,7 +27,7 @@ sudo make prefix=/usr/local install
 
 ### Go
 
-Download the lastest version of Go for `armv6l`. This is what made it all possible, the fact that Go can run and build on this CPU architecture.
+Download the lastest version of Go (see [Releases](https://go.dev/dl/#stable)) for `armv6l`. This is what made it all possible, the fact that Go can run and build on this CPU architecture.
 
 ```sh
 cd ~/src
@@ -40,7 +40,7 @@ Maybe next time try [`tinygo`](https://tinygo.org/).
 
 ### Wazero
 
-The only WASM runtime I found that had a chance of running on ARM 32bit is [Wazero](https://wazero.io). Wasmtime, Wasmer, WAMR (WASM Micro Runtime) and others do not support 32bit at this time.
+The only WASM runtime I found that had a chance of running on 32-bit ARM is [Wazero](https://github.com/tetratelabs/wazero), written in pure Go. None of the others supported it: Wasmtime, Wasmer, WAMR (WASM Micro Runtime).
 
 ```sh
 cd ~/src
