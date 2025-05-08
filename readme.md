@@ -27,7 +27,7 @@ export PATH="~/.local/bin:$PATH"
 
 Node.js cannot run WASM binary directly, it needs a JavaScript wrapper. See: [Node.js with WebAssembly](https://nodejs.org/en/learn/getting-started/nodejs-with-webassembly).
 
-In addition, if the WASM module needs to interact with the OS, it needs [WASI](https://nodejs.org/api/wasi.html) (WebAssembly System Interface).
+In addition, if the WASM module needs to interact with the OS, such as the file system, it needs [WASI](https://nodejs.org/api/wasi.html) (WebAssembly System Interface) or compiled with Emscripten ([`STANDALONE_WASM`](https://emscripten.org/docs/tools_reference/settings_reference.html#standalone-wasm)).
 
 ## Compile Wazero with Go targeting 32-bit ARM
 
